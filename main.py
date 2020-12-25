@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     #game.game_start()
 
-    math_cal.print_mathtable()
+    #math_cal.print_mathtable()
 
     math_cal.Guess_Number(50)
 
