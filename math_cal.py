@@ -20,18 +20,23 @@ def print_mathtable():
 
 
 def Guess_Number(int_MaxNumber):
-    print(" Please guess a number between 1 to {0}".format(int_MaxNumber))
+    print(" Try to guess a number between 1 to {0}".format(int_MaxNumber))
+    print('-' * 50)
+    print()
 
-    int_GuessNumber = 0
+    int_GuessNumber = -1
     int_AnswerNumber = random.randint(1, int_MaxNumber)
+    int_Count = 0
 
     while int_GuessNumber != int_AnswerNumber:
-        int_GuessNumber = int(input("What's your guess number: "))
+        int_Count = int_Count + 1
+
+        int_GuessNumber = int(input("{0} time to guess a number between 1 to {1}:".format(int_Count, int_MaxNumber)))
 
         if int_GuessNumber == int_AnswerNumber:
-            print("You are right!! The number is ", int_AnswerNumber)
+            print("After {0} time, you got right number: {1} ".format(int_Count, int_AnswerNumber))
         elif int_GuessNumber > int_AnswerNumber:
-            print("The number is lower!!")
+            print("Wrong number!! It is lower!!")
         else:
-            print("The number is higher!!")
+            print("Wrong number!! It is higher!!")
 

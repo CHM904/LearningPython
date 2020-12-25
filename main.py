@@ -3,9 +3,11 @@
 import math_cal
 import game
 
-def response(str_Value):
+
+def greeting(str_name):
     # print response
-    print(f'Hi, {str_Value}')
+    print(f'Hi, {str_name}, How are your today?')
+    print()
 
 
 def print_title():
@@ -17,16 +19,14 @@ def print_title():
 
 if __name__ == '__main__':
 
+    str_username = input("What's your name: ")
+    greeting(str_username)
 
-    response('This is Python learning script')
+    #game.game_start()
 
-    game.game_start()
+    math_cal.print_mathtable()
 
-    #math_cal.print_mathtable()
-
-    #math_cal.Guess_Number(50)
-
-
+    math_cal.Guess_Number(50)
 
     #int_result = 45
     #print(bin(int_result))
