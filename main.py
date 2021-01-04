@@ -2,6 +2,7 @@
 
 import math_cal
 import game
+import a1_string
 
 
 def greeting(str_name):
@@ -22,11 +23,15 @@ if __name__ == '__main__':
     str_username = input("What's your name: ")
     greeting(str_username)
 
+    str_teststr = input("What is your string:")
+    testing_string(str_teststr)
+
+
     #game.game_start()
 
     #math_cal.print_mathtable()
 
-    math_cal.Guess_Number(50)
+    #math_cal.Guess_Number(50)
 
     #int_result = 45
     #print(bin(int_result))
@@ -46,12 +51,7 @@ if __name__ == '__main__':
     #else:
     #    response('Wrong number')
 
-    #username = "HugoChang"
-    #print(username)
-    #print(username[0])
-    #print(username[-1])
-    #print(username[1:3])
-    #print(username[0:8:2])
+
 
     #print("Enter your age")
     #int_age = int(input('Enter your age'))
