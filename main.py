@@ -1,9 +1,5 @@
 # This is a learning code for Python
-
-import math_cal
-import game
 import a1_string
-
 
 def greeting(str_name):
     # print response
@@ -24,6 +20,7 @@ if __name__ == '__main__':
     greeting(str_username)
 
     str_teststr = input("What is your string:")
+
     testing_string(str_teststr)
 
 
