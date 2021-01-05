@@ -1,10 +1,8 @@
-# This is a learning code for Python
-import a1_string
+# This is main code for Python learning
 
-def greeting(str_name):
-    # print response
-    print(f'Hi, {str_name}, How are your today?')
-    print()
+#import math_cal
+#import game
+import a1_string
 
 
 def print_title():
@@ -16,12 +14,9 @@ def print_title():
 
 if __name__ == '__main__':
 
-    str_username = input("What's your name: ")
-    greeting(str_username)
+    str_InputValue = input("What is your testing string: ")
 
-    str_teststr = input("What is your string:")
-
-    testing_string(str_teststr)
+    a1_string.string_operation(str_InputValue)
 
 
     #game.game_start()
@@ -29,12 +24,6 @@ if __name__ == '__main__':
     #math_cal.print_mathtable()
 
     #math_cal.Guess_Number(50)
-
-    #int_result = 45
-    #print(bin(int_result))
-    #print(oct(int_result))
-    #print(hex(int_result))
-
 
     #print_title()
     #Choice = int(input("What is your color?"))
@@ -48,13 +37,10 @@ if __name__ == '__main__':
     #else:
     #    response('Wrong number')
 
-
-
     #print("Enter your age")
     #int_age = int(input('Enter your age'))
 
-    #for count in range(1, int_age, 1):
-    #    print("You are old!!" if int_age > 40 else "You are young!!")
+
 
 
 
