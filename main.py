@@ -2,12 +2,7 @@
 
 import math_cal
 import game
-
-
-def greeting(str_name):
-    # print response
-    print(f'Hi, {str_name}, How are your today?')
-    print()
+import a1_string
 
 
 def print_title():
@@ -19,14 +14,15 @@ def print_title():
 
 if __name__ == '__main__':
 
-    str_username = input("What's your name: ")
-    greeting(str_username)
+    str_InputValue = input("Please enter your testing string: ")
+
+    a1_string.string_operation(str_InputValue)
 
     #game.game_start()
 
     #math_cal.print_mathtable()
 
-    math_cal.Guess_Number(50)
+    #math_cal.Guess_Number(50)
 
     #int_result = 45
     #print(bin(int_result))
@@ -46,18 +42,7 @@ if __name__ == '__main__':
     #else:
     #    response('Wrong number')
 
-    #username = "HugoChang"
-    #print(username)
-    #print(username[0])
-    #print(username[-1])
-    #print(username[1:3])
-    #print(username[0:8:2])
 
-    #print("Enter your age")
-    #int_age = int(input('Enter your age'))
-
-    #for count in range(1, int_age, 1):
-    #    print("You are old!!" if int_age > 40 else "You are young!!")
 
 
 
