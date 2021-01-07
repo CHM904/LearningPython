@@ -1,51 +1,31 @@
 # This is main code for Python learning
 
-#import math_cal
-#import game
+import math_cal
+import game
 import a1_string
+import a2_list
 
 
 def print_title():
-    print("1. Red")
-    print("2. Blue")
-    print("3. Yellow")
-    print("4. Purple")
+    print("1. String Operation")
+    print("2. List Operation")
+    print("3. Game Operation")
+    print("4. Math Operation")
 
 
 if __name__ == '__main__':
 
-    str_InputValue = input("What is your testing string: ")
+    print_title()
+    select_value = int(input("Please select your operation:"))
 
-    a1_string.string_operation(str_InputValue)
-
-
-    #game.game_start()
-
-    #math_cal.print_mathtable()
-
-    #math_cal.Guess_Number(50)
-
-    #print_title()
-    #Choice = int(input("What is your color?"))
-
-    #if (Choice == 1):
-    #    response('Red')
-    #elif (Choice == 2):
-    #    response('Blue')
-    #elif (Choice == 3):
-    #    response('Yellow')
-    #else:
-    #    response('Wrong number')
-
-    #print("Enter your age")
-    #int_age = int(input('Enter your age'))
-
-
-
-
-
-
-
-
-
-
+    if select_value == 1:
+        a1_string.string_operation(input("What is your testing string: "))
+    elif select_value == 2:
+        a2_list.list_operation()
+    elif select_value == 3:
+        game.game_start()
+    elif select_value == 4:
+        math_cal.print_mathtable()
+        math_cal.Guess_Number(50)
+    else:
+        print("Your operation nnot support. Bye!!")
