@@ -7,5 +7,5 @@ if name=="Hugo":
 else:
     print ("Hello!, " + name + ", do you like Python?")
 
-#print("Today is " + str(datetime.date))
+print("Today is " + str(datetime.date.today()))
 
